@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'sans-serif';
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-black);
+  padding: 0 10px;
+  position: relative;
+}
+
+.container {
+  background-color: var(--dark-grey);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+  max-width: 425px;
+  width: 100%;
+}
+
+.container > *:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.image {
+  border-radius: 100%;
+  width: 86px;
+}
+
+.detail > h2 {
+  font-weight: 400;
+  color: var(--white);
+  font-size: 31px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+
+.detail > p {
+  color: var(--green);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.desc {
+  color: var(--white);
+  font-weight: 200;
+  text-align: center;
+}
+
+.social-link-list {
+  list-style-type: none;
+  width: 100%;
+}
+
+.social-link-list > li {
+  text-align: center;
+  background-color: var(--grey);
+  width: 100%;
+  padding: 11px;
+  border-radius: 7px;
+  transition: all 150ms linear;
+}
+.social-link-list > li:hover {
+  cursor: pointer;
+  background-color: var(--green);
+}
+
+.social-link-list > li:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.social-link-list > li > a {
+  font-size: 15px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+.social-link-list > li:hover > a {
+  color: var(--dark-grey);
+}
+
+#attribution {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 11px 4px;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 390px;
+  background-color: hsla(0, 0%, 100%, 0.851);
+}
+
+#attribution > a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+#attribution > a:hover {
+  text-decoration: underline;
+}
+
+/* small devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+    max-width: 380px;
+  }
+  .container > *:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
