@@ -25,7 +25,7 @@ Users should be able to:
 
 #### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/social-links-profile--fOr93PIjD)
 - Live Site URL: [Live Site URL](https://sam4web.github.io/social-links-profile/)
 
 ### Built with
